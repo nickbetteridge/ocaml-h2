@@ -47,7 +47,7 @@ let repeat (Scheduler.PriorityTreeNode.Connection root) queue num =
       match Scheduler.PriorityQueue.pop q with
       | None ->
         failwith "invalid queue"
-      | Some ((k, (Scheduler.PriorityTreeNode.Stream p as p_node)), q') ->
+      | Some ((k, (Stream p as p_node)), q') ->
         (* simulate writing 100 bytes *)
         root.t_last <- p.t;
         Scheduler.update_t p_node 100;
