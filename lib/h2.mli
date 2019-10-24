@@ -357,7 +357,7 @@ end
 module Body : sig
   type 'rw t
 
-  val empty : t
+  val empty : 'rw t
 
   val schedule_read
     :  [ `read ] t
