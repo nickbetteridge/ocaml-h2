@@ -67,6 +67,8 @@ let create_empty () =
 
 let empty = create_empty ()
 
+let is_empty t = if (Bigstringaf.length rd.Rd.resp_body.faraday) = 0 then true else false
+
 let ready_to_write t = t.ready_to_write ()
 
 let write_char t c =

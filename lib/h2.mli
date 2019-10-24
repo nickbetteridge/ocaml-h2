@@ -359,6 +359,8 @@ module Body : sig
 
   val empty : 'rw t
 
+  val is_empty : 'rw t -> bool
+
   val schedule_read
     :  [ `read ] t
     -> on_eof:(unit -> unit)
