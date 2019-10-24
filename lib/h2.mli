@@ -357,6 +357,8 @@ end
 module Body : sig
   type 'rw t
 
+  val empty : t
+
   val schedule_read
     :  [ `read ] t
     -> on_eof:(unit -> unit)
